@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="bg-other-primary border-b border-other-border py-6 px-6 md:px-32"
+    >
+      <div class="relative flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img
+              src="../assets/images/videobelajar_logo.svg"
+              alt="Videobelajar Logo"
+              class="h-[1.375rem] md:h-[2rem]"
+            />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-9">
+          <!-- Kategori -->
+          <div class="relative group">
+            <a href="#" class="body-medium font-medium text-dark-secondary">
+              Kategori
+            </a>
+          </div>
+
+          <!-- Profile -->
+          <div class="flex-shrink-0">
+            <img
+              src="../assets/images/avatar.png"
+              alt="Profile Icon"
+              class="h-[44px] rounded-[10px]"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:hidden">
+          <button>
+            <img
+              src="../assets/images/hamburger.png"
+              alt="Hamburger Icon"
+              class="h-[20px] w-[20px]"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bg-other-background py-6 md:py-16 px-6 md:px-32">
+      <!-- Hero Section -->
+      <section
+        class="relative rounded-[20px] h-[25rem] w-full overflow-hidden mb-16"
+      >
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+          <img
+            src="../assets/images/hero_bg.jpg"
+            alt="Hero Background"
+            class="h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black opacity-80"></div>
+        </div>
+
+        <!-- Content Layer -->
+        <div
+          class="relative z-10 h-full flex flex-col justify-center items-center px-5 sm:px-[8.75rem] py-[2.3125rem] sm:pt-[4.2813rem] sm:pb-[3.1563rem] text-center"
+        >
+          <h1
+            class="heading-1 text-[1.5rem] md:text-[3rem] font-bold text-white-primary mb-4"
+          >
+            Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
+            Interaktif!
+          </h1>
+
+          <p class="body-small sm:body-medium text-white-primary mb-6">
+            Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
+            pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat
+            berpartisipasi dalam latihan interaktif yang akan meningkatkan
+            pemahaman Anda.
+          </p>
+
+          <button
+            type="button"
+            class="py-[0.625rem] px-[0.5rem] sm:px-[1.625rem] bg-main-primary text-white-primary rounded-lg body-small sm:body-medium hover:bg-main-primary-400 cursor-pointer transition duration-300"
+          >
+            Temukan Video Course untuk Dipelajari!
+          </button>
+        </div>
+      </section>
+
+      <!-- Course Collection Section -->
+      <section class="mb-16">
+        <!-- Section Header -->
+        <div class="mb-6">
+          <h2 class="heading-2 text-dark-primary mb-2">
+            Koleksi Video Pembelajaran Unggulan
+          </h2>
+          <p class="body-medium text-dark-secondary">
+            Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
+          </p>
+        </div>
+
+        <!-- Category Navigation -->
+        <div class="mb-8">
+          <div
+            class="whitespace-nowrap flex overflow-x-auto pb-2 hide-scrollbar"
+          >
+            <div
+              class="whitespace-nowrap text-main-tertiary font-medium pr-9 pb-3 relative"
+            >
+              Semua Kelas
+              <div
+                class="absolute -bottom-2 left-0 w-[3.25rem] h-[0.375rem] bg-main-tertiary rounded-lg"
+              ></div>
+            </div>
+            <div class="whitespace-nowrap text-dark-secondary pr-9">
+              Pemasaran
+            </div>
+            <div class="whitespace-nowrap text-dark-secondary pr-9">Desain</div>
+            <div class="whitespace-nowrap text-dark-secondary pr-9">
+              Pengembangan Diri
+            </div>
+            <div class="whitespace-nowrap text-dark-secondary pr-9">Bisnis</div>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+          <!-- Course Card 1 - Responsive -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0">
+                  <img
+                    src="../assets/images/card_placeholder_1.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_1.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0">
+                  <img
+                    src="../assets/images/card_placeholder_2.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_2.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_3.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_3.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 4 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_4.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_4.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 5 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_5.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_5.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 6 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_6.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_6.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 7 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_7.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_7.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 8 -->
+
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_8.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_8.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+
+          <!-- Course Card 9 -->
+          <div
+            class="bg-white-primary rounded-[0.625rem] overflow-hidden border border-other-border p-4 md:p-5"
+          >
+            <!-- Mobile Layout -->
+            <div class="grid grid-cols-3 md:grid-cols-1 gap-4">
+              <!-- Course Image -->
+              <div class="col-span-1">
+                <div class="w-full h-full flex-shrink-0 overflow-hidden">
+                  <img
+                    src="../assets/images/card_placeholder_9.jpg"
+                    alt="Course Image"
+                    class="w-[5.125rem] md:w-[20.875rem] h-[5.125rem] md:h-[12.0625rem] object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Course Info -->
+              <div class="col-span-2 md:col-span-1">
+                <!-- Course Title -->
+                <h3
+                  class="poppins-card-heading md:heading-6 text-dark-primary mb-1 md:mb-2"
+                >
+                  Big 4 Auditor Financial Analyst
+                </h3>
+
+                <!-- Course Description (Desktop Only) -->
+                <p class="hidden md:block body-small text-dark-secondary mb-4">
+                  Mulai transformasi dengan instruktur profesional, harga yang
+                  terjangkau, dan..
+                </p>
+
+                <!-- Instructor Info -->
+                <div class="flex items-center">
+                  <img
+                    src="../assets/images/instructor_avatar_9.png"
+                    alt="Instructor"
+                    class="w-9 h-9 md:w-10 md:h-10 rounded-lg mr-2 md:mr-[0.625rem]"
+                  />
+                  <div>
+                    <p
+                      class="text-xs md:body-small font-medium text-dark-primary"
+                    >
+                      Jenna Ortega
+                    </p>
+                    <p class="text-xs md:body-small text-dark-secondary">
+                      Senior Accountant
+                      <span class="hidden md:inline-flex"
+                        >di&nbsp;<span class="font-[700]">Gojek</span></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating and Price -->
+            <div class="flex justify-between items-center mt-2">
+              <div class="flex items-center">
+                <img
+                  src="../assets/images/Rating.png"
+                  alt="Star"
+                  class="w-20 h-3 md:w-[5.625rem] md:h-4"
+                />
+                <span
+                  class="text-xs md:body-small text-dark-secondary ml-1 md:ml-2"
+                  >3.5 (86)</span
+                >
+              </div>
+              <span
+                class="text-base font-semibold md:heading-6 text-green-500 md:text-main-primary"
+                >Rp 300K</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="relative py-8 sm:py-12 lg:py-16 my-8 sm:my-12 lg:my-16">
+        <!-- Background Image + Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="../assets/images/newsletter_bg.jpg"
+            alt="Newsletter Background"
+            class="w-full h-full object-cover opacity-80"
+          />
+          <div class="absolute inset-0 bg-black/80"></div>
+        </div>
+
+        <!-- Content -->
+        <div
+          class="relative z-10 max-w-4xl mx-auto text-center px-5 sm:px-6 py-16 text-white"
+        >
+          <p class="body-large uppercase text-white-secondary mb-4">
+            NEWSLETTER
+          </p>
+          <h2 class="heading-2 mb-4 text-white-primary">
+            Mau Belajar Lebih Banyak?
+          </h2>
+          <p class="body-medium max-w-2xl mx-auto mb-8 text-other-secondary">
+            Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran
+            spesial dari program-program terbaik hariesok.id
+          </p>
+
+          <!-- Desktop / Tablet Email Form -->
+          <div
+            class="max-w-xl mx-auto hidden sm:flex items-stretch bg-other-background rounded-lg overflow-hidden"
+          >
+            <input
+              type="email"
+              placeholder="Masukkan Emailmu"
+              class="w-full py-3 px-4 bg-other-background text-dark-primary focus:outline-none rounded-lg sm:rounded-r-none"
+            />
+            <div class="p-2 border-none">
+              <button
+              class="bg-main-secondary hover:bg-main-secondary-400 text-white-primary body-medium font-medium py-3 px-8 transition-colors rounded-lg"
+            >
+              Subscribe
+            </button>
+            </div>
+
+            </button>
+          </div>
+
+          <!-- Mobile Email Form -->
+          <div class="max-w-xl mx-auto flex flex-col gap-4 sm:hidden">
+            <input
+              type="email"
+              placeholder="Masukkan Emailmu"
+              class="w-full py-3 px-4 bg-other-background text-dark-primary focus:outline-none rounded-lg text-center"
+            />
+            <button
+              class="bg-main-secondary hover:bg-main-secondary-400 text-white-primary body-medium font-medium py-3 px-8 rounded-lg transition-colors"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white-primary py-6 md:py-16 px-6 md:px-32 border-t border-other-border">
+      <div class="relative">
+        <!-- Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <!-- Brand Section -->
+          <div>
+            <img src="../assets/images/videobelajar_logo.svg" alt="Videobelajar Logo" class="h-8 mb-6">
+            <p class="body-medium font-medium text-dark-primary mb-4">
+              Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!
+            </p>
+            <p class="body-small text-dark-secondary mb-2">
+              Jl. Usman Effendi No. 50 Lowokwaru, Malang
+            </p>
+            <p class="body-small text-dark-secondary">+62-877-7123-1234</p>
+          </div>
+    
+          <!-- Link Content -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kategori Links -->
+            <div>
+              <h3 class="heading-6 mb-6 flex justify-between items-center md:block">
+                Kategori
+                <img src="../assets/images/arrow-icon.svg" alt="arrow" class="h-4 w-4 md:hidden">
+              </h3>
+              <ul class="space-y-4 hidden md:block">
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Digital &amp; Teknologi</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Pemasaran</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Manajemen Bisnis</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Pengembangan Diri</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Desain</a></li>
+              </ul>
+            </div>
+    
+            <!-- Perusahaan Links -->
+            <div>
+              <h3 class="heading-6 mb-6 flex justify-between items-center md:block">
+                Perusahaan
+                <img src="../assets/images/arrow-icon.svg" alt="arrow" class="h-4 w-4 md:hidden">
+              </h3>
+              <ul class="space-y-4 hidden md:block">
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Tentang Kami</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">FAQ</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Kebijakan Privasi</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Ketentuan Layanan</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Bantuan</a></li>
+              </ul>
+            </div>
+    
+            <!-- Komunitas Links -->
+            <div>
+              <h3 class="heading-6 mb-6 flex justify-between items-center md:block">
+                Komunitas
+                <img src="../assets/images/arrow-icon.svg" alt="arrow" class="h-4 w-4 md:hidden">
+              </h3>
+              <ul class="space-y-4 hidden md:block">
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Tips Sukses</a></li>
+                <li><a href="#" class="body-small text-dark-secondary hover:text-main-primary">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Divider -->
+        <div class="border-t border-other-border my-10"></div>
+    
+        <!-- Copyright and Social Media -->
+        <div class="flex flex-col-reverse md:flex-row justify-between md:items-center items-start gap-6">
+          <p class="body-small text-dark-secondary">@2023 Gerobak Sayur All Rights Reserved.</p>
+          <div class="flex space-x-4">
+            <a href="#"><img src="../assets/images/linkedin.svg" alt="LinkedIn" class="h-[35px] w-[35px]"></a>
+            <a href="#"><img src="../assets/images/facebook.svg" alt="Facebook" class="h-[35px] w-[35px]"></a>
+            <a href="#"><img src="../assets/images/instagram.svg" alt="Instagram" class="h-[35px] w-[35px]"></a>
+            <a href="#"><img src="../assets/images/twitter.svg" alt="Twitter" class="h-[35px] w-[35px]"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@theme {
+  /* Primary colors - main */
+  --color-main-primary: rgba(62, 207, 76, 1);
+  --color-main-primary-400: rgba(107, 226, 107, 1);
+  --color-main-primary-300: rgba(148, 240, 139, 1);
+  --color-main-primary-200: rgba(192, 250, 180, 1);
+  --color-main-primary-100: rgba(226, 252, 217, 0.8);
+
+  /* Primary colors - secondary */
+  --color-main-secondary: rgba(255, 189, 58, 1);
+  --color-main-secondary-400: rgba(255, 210, 107, 1);
+  --color-main-secondary-300: rgba(255, 223, 136, 1);
+  --color-main-secondary-200: rgba(255, 236, 176, 1);
+  --color-main-secondary-100: rgba(255, 247, 215, 0.8);
+
+  /* Primary colors - tertiary */
+  --color-main-tertiary: rgba(246, 73, 32, 1);
+  --color-main-tertiary-400: rgba(249, 130, 86, 1);
+  --color-main-tertiary-300: rgba(252, 165, 120, 1);
+  --color-main-tertiary-200: rgba(254, 202, 165, 1);
+  --color-main-tertiary-100: rgba(254, 232, 210, 0.8);
+
+  /* Dark (text) */
+  --color-dark-primary: rgba(34, 35, 37, 1);
+  --color-dark-secondary: rgba(51, 51, 51, 0.68);
+  --color-dark-disabled: rgba(58, 53, 65, 0.38);
+
+  /* Light (text) */
+  --color-white-primary: rgba(255, 255, 255, 1);
+  --color-white-secondary: rgba(193, 194, 196, 1);
+  --color-white-disabled: rgba(157, 158, 161, 1);
+
+  /* Other */
+  --color-other-primary: rgba(255, 255, 255, 1);
+  --color-other-base: rgba(244, 245, 250, 1);
+  --color-other-secondary: rgba(249, 250, 252, 1);
+  --color-other-border: rgba(58, 53, 65, 0.12);
+  --color-other-background: rgba(255, 253, 243, 1);
+
+  /* info */
+  --color-info-pressed: rgba(4, 74, 162, 1);
+  --color-info-hover: rgba(6, 99, 194, 1);
+  --color-info-default: rgba(9, 128, 226, 1);
+  --color-info-background: rgba(235, 249, 254, 1);
+
+  /* Success */
+  --color-success-pressed: rgba(28, 150, 117, 1);
+  --color-success-hover: rgba(40, 179, 128, 1);
+  --color-success-default: rgba(56, 209, 137, 1);
+  --color-success-background: rgba(224, 253, 223, 1);
+
+  /* Warning */
+  --color-success-pressed: rgba(181, 164, 13, 1);
+  --color-success-hover: rgba(216, 198, 19, 1);
+  --color-success-default: rgba(252, 233, 27, 1);
+  --color-success-background: rgba(252, 248, 202, 1);
+
+  /* Error */
+  --color-error-pressed: rgba(183, 35, 21, 1);
+  --color-error-hover: rgba(219, 61, 31, 1);
+  --color-error-default: rgba(255, 92, 43, 1);
+  --color-error-background: rgba(252, 227, 209, 1);
+
+  /* Grayscale */
+  --color-gray-900: rgba(33, 33, 33, 1);
+  --color-gray-800: rgba(66, 66, 66, 1);
+  --color-gray-700: rgba(97, 97, 97, 1);
+  --color-gray-600: rgba(117, 117, 117, 1);
+  --color-gray-500: rgba(158, 158, 158, 1);
+  --color-gray-400: rgba(189, 189, 189, 1);
+  --color-gray-300: rgba(224, 224, 224, 1);
+  --color-gray-200: rgba(238, 238, 238, 1);
+  --color-gray-100: rgba(245, 245, 245, 1);
+  --color-gray-50: rgba(250, 250, 250, 1);
+
+  /* Font */
+  --font-lato: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+@layer utilities {
+  .bg-gradient-info {
+    background-image: linear-gradient(
+      to right,
+      rgba(111, 158, 255, 1),
+      rgba(0, 76, 232, 1)
+    );
+  }
+
+  .bg-gradient-success {
+    background-image: linear-gradient(
+      to right,
+      rgba(115, 255, 166, 1),
+      rgba(0, 194, 71, 1)
+    );
+  }
+
+  .bg-gradient-warning {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 229, 128, 0.21),
+      rgba(255, 225, 106, 1)
+    );
+  }
+
+  .bg-gradient-error {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 138, 155, 1),
+      rgba(255, 51, 51, 1)
+    );
+  }
+}
+
+@layer components {
+  .lato {
+    @apply font-lato text-gray-900;
+    line-height: 1.25;
+  }
+
+  .poppins-card-heading {
+    @apply font-poppins text-dark-primary font-[600] text-[1rem];
+    line-height: 1.2;
+  }
+
+  .heading-1 {
+    @apply font-poppins text-[3rem] font-bold text-gray-900;
+    line-height: 1.1;
+  }
+
+  .heading-2 {
+    @apply font-poppins text-[2.5rem] font-semibold text-gray-900;
+    line-height: 1.1;
+  }
+
+  .heading-3 {
+    @apply font-poppins text-[2rem] font-semibold text-gray-900;
+    line-height: 1.1;
+  }
+
+  .heading-4 {
+    @apply font-poppins text-[1.5rem] font-semibold text-gray-900;
+    line-height: 1.2;
+  }
+
+  .heading-5 {
+    @apply font-poppins text-[1.25rem] font-semibold text-gray-900;
+    line-height: 1.2;
+  }
+
+  .heading-6 {
+    @apply font-poppins text-[1.125rem] font-semibold text-gray-900;
+    line-height: 1.2;
+  }
+
+  .body-large {
+    @apply font-dm-sans text-[1.125rem] text-gray-900;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+  }
+
+  .body-medium {
+    @apply font-dm-sans text-[1rem] text-gray-900;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+  }
+
+  .body-small {
+    @apply font-dm-sans text-[0.875rem] text-gray-900;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+  }
+}

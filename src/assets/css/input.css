@@ -39,6 +39,7 @@
   --color-other-base: rgba(244, 245, 250, 1);
   --color-other-secondary: rgba(249, 250, 252, 1);
   --color-other-border: rgba(58, 53, 65, 0.12);
+  --color-other-background: rgba(255, 253, 243, 1);
 
   /* info */
   --color-info-pressed: rgba(4, 74, 162, 1);
@@ -126,6 +127,11 @@
   .lato {
     @apply font-lato text-gray-900;
     line-height: 1.25;
+  }
+
+  .poppins-card-heading {
+    @apply font-poppins text-dark-primary font-[600] text-[1rem];
+    line-height: 1.2;
   }
 
   .heading-1 {
